@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Blog = ({blog,readingTimeHandle}) => {
+const BlogCard = ({blog,readingTimeHandle,handleBookmark}) => {
     const {banner_img, hashtag_words
-,min_reading_time,title,writer_img,writer_name,writing_date} = blog;
+,min_reading_time,title,writer_img,writer_name,writing_date,id} = blog;
     return (
         <div className="card w-full glass my-12">
             <figure><img className="fluid" src={banner_img} alt="Top banner image"/></figure>
@@ -16,7 +16,7 @@ const Blog = ({blog,readingTimeHandle}) => {
                         </div>
                     </div>
                     <button>
-                        <div className="flex items-center px-4 py-2 bg-orange-400 rounded-lg text-white"> <span className="mx-2" >{min_reading_time}</span> min read <img className="fluid h-8 ml-2 rounded-md" src="./bookmark.jpg" alt="" /> </div>
+                        <div className="flex items-center px-4 py-2 bg-orange-400 rounded-lg text-white"> <span className="mx-2" >{min_reading_time}</span> min read <img onClick={() => handleBookmark(title,id)} className="fluid h-8 ml-2 rounded-md" src="./bookmark.jpg" alt="" /> </div>
                     </button>
                 </div>
                 <div className="w-9/12" >
@@ -31,4 +31,4 @@ const Blog = ({blog,readingTimeHandle}) => {
     );
 };
 
-export default Blog;
+export default BlogCard;
