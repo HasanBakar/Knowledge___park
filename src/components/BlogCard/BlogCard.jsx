@@ -1,10 +1,13 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BlogCard = ({blog,readingTimeHandle,handleBookmark}) => {
     const {banner_img, hashtag_words
 ,min_reading_time,title,writer_img,writer_name,writing_date,id} = blog;
     return (
         <div className="card w-full glass my-12">
+            <ToastContainer></ToastContainer>
             <figure><img className="fluid" src={banner_img} alt="Top banner image"/></figure>
             <div className="card-body">
                 <div className="flex items-center justify-between" >
