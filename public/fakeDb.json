@@ -10,7 +10,7 @@
             "#beginners",
             "#programming"
         ],
-        "min_reading_time": 15
+        "min_reading_time": "15"
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
             "#programming",
             "#codeForCareer"
         ],
-        "min_reading_time": 10
+        "min_reading_time": "10"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
             "#codeForCareer",
             "#helpfulForCodeLife"
         ],
-        "min_reading_time": 8
+        "min_reading_time": "08"
     },
     {
         "id": 4,
@@ -49,7 +49,7 @@
             "#programming",
             "#helpfulForCodeLife"
         ],
-        "min_reading_time": 6
+        "min_reading_time": "06"
     },
     {
         "id": 5,
@@ -62,6 +62,6 @@
             "#beginners",
             "#codeForCareer"
         ],
-        "min_reading_time": 20
+        "min_reading_time": "20"
     }
 ]

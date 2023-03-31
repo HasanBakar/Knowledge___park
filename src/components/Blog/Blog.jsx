@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Blog = ({blog}) => {
+const Blog = ({blog,readingTimeHandle}) => {
     const {banner_img, hashtag_words
 ,min_reading_time,title,writer_img,writer_name,writing_date} = blog;
     return (
@@ -21,7 +21,10 @@ const Blog = ({blog}) => {
                 </div>
                 <div className="w-9/12" >
                     <h2 className="card-title text-3xl">{title} </h2>
-                    <p>How to park your car at your garage?</p>
+                    <p><span>{hashtag_words[0]}</span> <span> {hashtag_words[1]} </span></p>
+                </div>
+                <div>
+                    <button onClick={()=>readingTimeHandle(min_reading_time)} className="text-blue-800 underline font-semibold text-2xl" >Mark as read</button>
                 </div>
             </div>
         </div>
