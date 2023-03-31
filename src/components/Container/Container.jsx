@@ -11,6 +11,8 @@ const [totalBookmarkNumber, setTotalBookmarkNumber] = useState(0);
 const [Bookmarks, setBookmarks] = useState([]);
 
 
+
+
 useEffect(() => {
   fetch("fakeDb.json")
   .then(res => res.json())
@@ -24,13 +26,13 @@ const readingTimeHandle = (time) =>{
 
 // const bookmarksContainer = [];
 const handleBookmark = (title,id) =>{
+  
     let bookmarkItem = {}
     bookmarkItem.id = id;
     bookmarkItem.title = title;
-    // bookmarksContainer.push(bookmarkItem)
     const newBookmarkCount = totalBookmarkNumber + 1;
     setTotalBookmarkNumber(newBookmarkCount); 
-    setBookmarks([...Bookmarks,bookmarkItem]);
+    setBookmarks([...Bookmarks,bookmarkItem]); 
 }
 
 
@@ -51,6 +53,7 @@ const handleBookmark = (title,id) =>{
                 <BookmarkSide
                 totalTime = {totalTime}
                 totalBookmarkNumber={totalBookmarkNumber}
+                Bookmarks={Bookmarks}
                 ></BookmarkSide>
             </div>
         </div>
