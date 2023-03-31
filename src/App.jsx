@@ -9,8 +9,6 @@ function App() {
 
   return (
     <div className="App">
-     {/* <h1 className="text-4xl underline text-center" >Hello TailwindCSS</h1>
-      */}
       <Header></Header>
     </div>
   )
