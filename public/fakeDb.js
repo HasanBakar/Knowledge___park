@@ -11,7 +11,7 @@ const data = [
 },
 {
     id:2,
-    banner_img:"https://cutt.ly/S41XVlA",
+    banner_img:"https://rb.gy/v5y0",
     writer_img:"https://rb.gy/0k8c",
     writer_name:"Benjamin york",
     writing_date: "Feb 22 (10 Days ago)",
@@ -21,7 +21,7 @@ const data = [
 },
 {
     id:3,
-    banner_img:"https://cutt.ly/S41XVlA",
+    banner_img:"https://rb.gy/lwnb",
     writer_img:"https://rb.gy/qi2t",
     writer_name:"William Hunt",
     writing_date:"Jan 22 (24 Days ago)",
@@ -31,7 +31,7 @@ const data = [
 },
 {
     id:4,
-    banner_img:"https://cutt.ly/S41XVlA",
+    banner_img:"https://cutt.ly/z41X8D8",
     writer_img:"https://rb.gy/yuv0",
     writer_name:"Wylder Miller",
     writing_date:"June 23 (2 Days ago)",
@@ -41,7 +41,7 @@ const data = [
 },
 {
     id:5,
-    banner_img:"https://cutt.ly/S41XVlA",
+    banner_img:"https://cutt.ly/M41X591",
     writer_img:"https://rb.gy/pr2m",
     writer_name:"Marry Aurora",
     writing_date:"June 20 (4 Days ago)"
